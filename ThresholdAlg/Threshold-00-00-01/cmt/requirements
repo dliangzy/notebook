@@ -1,0 +1,26 @@
+package ThresholdAlg
+author Liang Liu <lliu@ustc.edu.cn>
+use BesPolicy 		BesPolicy-*
+use GaudiInterface 	GaudiInterface-* 	External
+use TrigEvent 		TrigEvent-* 		Event
+use DstEvent 		DstEvent-* 			Event
+use EventModel		EventModel-*		Event
+use EvtRecEvent 	EvtRecEvent-* 		Event
+
+use	MdcRawEvent		MdcRawEvent-*		Mdc
+
+use VertexFit		VertexFit-*			Analysis
+use ParticleID		ParticleID-*		Analysis
+
+use McTruth 		McTruth-*			Event
+
+use BesROOT 		BesROOT-00-*		External
+
+use RawDataProviderSvc RawDataProviderSvc-* Event
+
+apply_pattern component_library
+library ThresholdAlg *.cxx components/*.cxx
+
+apply_pattern declare_runtime files=*.txt
+
+
