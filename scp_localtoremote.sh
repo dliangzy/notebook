@@ -3,7 +3,7 @@
 passwd="********\r"
 file=$1
 expect<<-END
-spawn scp $file lliu@ui06.lcg.ustc.edu.cn:/home/lliu/scp/
+spawn scp $file user@hostname:/home/lliu/scp/
 expect "password: "
 send $passwd
 expect eof
