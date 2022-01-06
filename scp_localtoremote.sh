@@ -1,6 +1,6 @@
 #!/bin/bash
 #This script is used to copy file from localhost to remote host
-passwd="LL@ustc0629\r"
+passwd="********\r"
 file=$1
 expect<<-END
 spawn scp $file lliu@ui06.lcg.ustc.edu.cn:/home/lliu/scp/
