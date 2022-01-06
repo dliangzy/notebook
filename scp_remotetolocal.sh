@@ -1,5 +1,5 @@
 #!/bin/bash
-passwd="LL@ustc0629\r"
+passwd="*********\r"
 file=$1
 expect<<-END
 spawn scp lliu@ui06.lcg.ustc.edu.cn:$file .
