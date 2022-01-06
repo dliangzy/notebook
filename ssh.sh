@@ -1,5 +1,5 @@
 #!/usr/bin/expect
-spawn ssh lliu@ui06.lcg.ustc.edu.cn
+spawn ssh user@hostname
 expect "password: "
 send "*******\r"
 interact
